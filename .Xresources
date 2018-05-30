@@ -1,0 +1,36 @@
+URxvt.iso14755: False
+! Clickable URLs
+URxvt.perl-ext-common:  default,matcher,font-size
+URxvt.urlLauncher:      /usr/bin/google-chrome-stable
+URxvt.matcher.button:   1
+urxvt*foreground: #c0c0c0
+urxvt*background: #000000
+urxvt*color0: #000000
+!urxvt*color1: #ad7fa8
+urxvt*color2: #4e9a06
+urxvt*color3: #ffd00a
+urxvt*color4: #004f9e
+urxvt*color5: #ec0048
+urxvt*color6: #2aa7e7
+urxvt*color7: #f2f2f2
+urxvt*color8: #1d202f
+urxvt*color9: #ff361e
+urxvt*color10: #ffc005
+urxvt*color11: #93ff00
+urxvt*color12: #729fcf
+urxvt*color13: #ef0051
+urxvt*color14: #4bb8fd
+urxvt*color15: #a020f0
+! urxvt*transparent: true
+urxvt*shading: 50
+urxvt*fading: 50
+URxvt.font: xft:SauceCodePro Nerd Font Mono:semibold:hinting=True;antialias:True:pixelsize=14
+urxvt*scrollBar: false
+URxvt.keysym.C-Up:     perl:font-size:increase
+URxvt.keysym.C-Down:   perl:font-size:decrease
+Rxvt*cursorBlink: true
+! new
+URxvt*scrollTtyOutput:      false
+URxvt*scrollWithBuffer:     true
+URxvt*scrollTtyKeypress:    true
+URxvt*saveLines: 100000
