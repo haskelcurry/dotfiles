@@ -1,0 +1,15 @@
+{
+  "suggest.noselect": false,
+  "tsserver.maxTsServerMemory": 1024,
+  "codeLens.enable": false,
+  "coc.preferences.formatOnSaveFiletypes": ["css", "js", "ts"],
+  "coc.preferences.colorSupport": true,
+  "prettier.disableSuccessMessage": false,
+  "tslint.autoFixOnSave": true,
+  "diagnostic.messageDelay": 0,
+  "typescript.referencesCodeLens.enable": false,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true
+}

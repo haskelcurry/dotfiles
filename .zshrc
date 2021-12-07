@@ -5,7 +5,9 @@
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+ZSH_THEME=powerlevel10k/powerlevel10k
+source ~/.purepower
+POWERLEVEL9K_VCS_GIT_HOOKS=(vcs-detect-changes git-untracked git-aheadbehind git-remotebranch git-tagname)
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -87,8 +89,11 @@ alias c="clear"
 alias gc="git commit -m "
 alias ga="git add -u"
 alias gs="git status"
-alias gp="git push"
-alias gpu="git pull"
+alias gps="git push"
+alias gpl="git pull"
+alias gcm="git checkout master"
+alias gc-="git checkout -- "
+alias g-="git checkout -"
 alias vf="vifm ."
 alias vifm="vifm ."
 alias cp="rsync -avz --progress -h"
@@ -97,7 +102,9 @@ alias k="sudo killall chrome"
 alias zcp='zmv -C'
 alias zln='zmv -L'
 alias ur='for file in *.rar; do unrar x "${file}"; done;'
-alias emacs="emacsclient --create-frame"
+alias blueoff='pacmd set-card-profile alsa_card.pci-0000_00_1b.0 output:analog-stereo+input:analog-stereo'
+alias blueon='pacmd set-card-profile alsa_card.pci-0000_00_1b.0 off'
+alias vim="nvim"
 
 bindkey -M viins 'fd' vi-cmd-mode
 bindkey '^l' autosuggest-accept
@@ -120,4 +127,15 @@ prompt_context () { }
 unset zle_bracketed_paste
 eval "$(dircolors -b)"
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/usr/bin/core_perl:$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/usr/bin/core_perl:$HOME/.emacs.d/bin:$HOME/.local/bin:$PATH"
+export JAVA_HOME="/usr/lib/jvm/default"
+export DOCKER_HOST="tcp://0.0.0.0:2375"
+export XDG_CURRENT_DESKTOP=gnome
+
+###-tns-completion-start-###
+if [ -f /home/markel/.tnsrc ]; then 
+    source /home/markel/.tnsrc 
+fi
+###-tns-completion-end-###
+###
+source /usr/share/nvm/init-nvm.sh
